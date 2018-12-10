@@ -1219,17 +1219,6 @@ CREATE TABLE `people` (
   KEY `index_people_on_username` (`username`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-DROP TABLE IF EXISTS `prospect_emails`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `prospect_emails` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `email` varchar(255) DEFAULT NULL,
-  `created_at` datetime NOT NULL,
-  `updated_at` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `schema_migrations`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
@@ -2312,11 +2301,14 @@ INSERT INTO `schema_migrations` (version) VALUES
 ('20180523121344'),
 ('20180524075239'),
 ('20180524081429'),
-('20180904075653'),
-('20181012065625'),
-('20181024094615'),
 ('20180717122957'),
 ('20180720044534'),
 ('20180720065907'),
 ('20180723115548'),
-('20181106212306');
+('20180904075653'),
+('20181012065625'),
+('20181024094615'),
+('20181106212306'),
+('20181210132229');
+
+
